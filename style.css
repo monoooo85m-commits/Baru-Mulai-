@@ -37,3 +37,7 @@ body {
     border-radius: 50%;
     background: linear-gradient(135deg, #58a6ff, #a371f7);
 }
+kartu-profil img {
+  width: 150px;
+  border-radius: 45%;
+}
