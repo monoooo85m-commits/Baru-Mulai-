@@ -4,7 +4,7 @@
      color: #616161;
    }
 
-.kartu-profil {
+kartu-profil {
   widht: 300px;
   margin: 50p auto;
   padding: 20px;
@@ -15,7 +15,7 @@
   
 }
 
-.kartu-profil img {
+kartu-profil img {
   width: 150px;
   border-radius: 45%;
 }
