@@ -11,6 +11,7 @@ body {
     align-items: center;
     background: #ffa50080;
     font-family: 'Segoe UI', sans-serif;
+    color: #f0f0f0;
 }
 
 .kartu-profil {
@@ -30,14 +31,10 @@ body {
 }
 
 .kartu-profil image {
-    width: 115px;
-    height: 115px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto 18px;
     padding: 4px;
     border-radius: 50%;
     background: linear-gradient(135deg, #58a6ff, #a371f7);
-}
-kartu-profil image {
-  width: 150px;
-  border-radius: 50%;
 }
