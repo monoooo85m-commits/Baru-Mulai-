@@ -1,40 +1,112 @@
- {
+/* Reset dasar */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Tampilan halaman */
 body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ffa50080;
-    font-family: 'Segoe UI', sans-serif;
-    color: #f0f0f0;
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #263238;
 }
 
+/* Kartu profil */
 .kartu-profil {
-    width: 320px;
-    padding: 25px;
+    width: 100%;
+    max-width: 360px;
+    padding: 32px 26px;
     text-align: center;
-    background: purple;
-    border: 1px solid #30363d;
-    border-radius: 18px;
-    transition: 0.3s ease;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.28);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .kartu-profil:hover {
-    transform: translateY(-7px);
-    border-color: #ff9847;
-    box-shadow: 0 10px 30px rgba(88, 166, 255, 0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
 }
 
-.kartu-profil image {
-    width: 320px;
-    height: 150px;
-    margin: 0 auto 50px;
-    padding: 20px;
+/* Foto profil */
+.kartu-profil img {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
     border-radius: 50%;
-    background: linear-gradient(135deg, #58a6ff, #a371f7);
+    border: 5px solid #e8eef7;
+    margin-bottom: 20px;
+}
+
+/* Judul profil */
+.kartu-profil h1 {
+    margin-bottom: 12px;
+    color: #172b4d;
+    font-size: 26px;
+}
+
+/* Deskripsi */
+.kartu-profil p {
+    margin-bottom: 22px;
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Link Instagram */
+.kartu-profil a {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 11px 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.kartu-profil a:hover {
+    opacity: 0.88;
+    transform: scale(1.04);
+}
+
+/* Tombol sapa */
+.kartu-profil button {
+    display: block;
+    width: 100%;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #243b55;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.kartu-profil button:hover {
+    background: #141e30;
+    transform: translateY(-2px);
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 480px) {
+    .kartu-profil {
+        max-width: 100%;
+        padding: 28px 22px;
+    }
+
+    .kartu-profil img {
+        width: 125px;
+        height: 125px;
+    }
 }
