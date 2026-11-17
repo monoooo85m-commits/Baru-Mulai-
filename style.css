@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: # ffa50080;
+    background: #ffa50080;
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -17,7 +17,7 @@ body {
     width: 320px;
     padding: 25px;
     text-align: center;
-    background: #161b22;
+    background: purple;
     border: 1px solid #30363d;
     border-radius: 18px;
     transition: 0.3s ease;
@@ -25,7 +25,7 @@ body {
 
 .kartu-profil:hover {
     transform: translateY(-7px);
-    border-color: #58a6ff;
+    border-color: #ff9847;
     box-shadow: 0 10px 30px rgba(88, 166, 255, 0.12);
 }
 
